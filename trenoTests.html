@@ -1,0 +1,17 @@
+<head>
+  <title>trenoTests</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  <ul>
+  {{#each tasks}}
+    {{> task}}
+  {{/each}}
+  </ul>
+</body>
+
+<template name="task">
+    <li>{{ text }}</li>
+</template>
