@@ -1,10 +1,11 @@
+
+Tasks = new Mongo.Collection("tasks");
+
 if (Meteor.isClient) {
   Template.body.helpers({
-    tasks: [
-      {text : "uno"},
-      {text : "due"},
-      {text : "tre"}
-    ]
+    tasks: function () {
+      return Tasks.find({});
+    }
   });
 }
 
