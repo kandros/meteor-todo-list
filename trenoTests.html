@@ -3,13 +3,18 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+    <header>
+        <h1>Welcome to Meteor!</h1>
+        <form class="new-task">
+            <input type="text" name="text" placeholder="Insert new task here">
+        </form>
+    </header>
 
-  <ul>
-  {{#each tasks}}
-    {{> task}}
-  {{/each}}
-  </ul>
+    <ul>
+        {{#each tasks}}
+            {{> task}}
+        {{/each}}
+    </ul>
 </body>
 
 <template name="task">
