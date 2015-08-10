@@ -4,7 +4,13 @@
 
 <body>
     <header>
-        <h1>Welcome to Meteor!</h1>
+        <h1>Todo list - {{incompleteCount}} remaining tasks</h1>
+
+        <label class="hide-completed">
+            <input type="checkbox" checked="{{hideCompleted}}">
+            Hide Completed Tasks
+        </label>
+
         <form class="new-task">
             <input type="text" name="text" placeholder="Insert new task here">
         </form>
